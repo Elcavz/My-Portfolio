@@ -5,11 +5,11 @@
     margin: 0;
     padding: 0;
     font-family: Montserrat;
+    scroll-behavior: smooth;
 }
 
 body {
-    background: url(images/bg.webp) no-repeat;
-    background-size: cover;
+    
 }
 
 .header-span {
@@ -65,16 +65,15 @@ ul.nav {
     color: aqua;
 }
 
-section {
+.section-home {
+    background: url(images/bg.webp) no-repeat;
+    background-size: cover;
     color: white;
     display: flex;
     align-items: center;
-    height: 60vh;
+    height: 100vh;
     padding: 0 10%;
-    background-size: contain;
-    background-position: right;
-    margin-right: 250px;
-    margin-top: 50px;
+    margin-top: -60px;
 }
 
 .content {
@@ -122,6 +121,7 @@ section {
 
 .me img {
     height: 500px;
+    margin-left: 70px;
     animation: fadeIn 3s;
 }
 
@@ -137,4 +137,106 @@ section {
     margin-left: 800px;
     margin-top: 80px;
     transition: all 0.7s ease-in-out 0s;
+}
+
+.section-about {
+    background: url(images/bg.webp) no-repeat;
+    background-size: cover;
+    height: 100vh;
+    text-align: center;
+    padding-top: 150px;
+}
+
+.container-about {
+    color: aliceblue;
+}
+
+.about-img img  {
+    height: 400px;
+    margin-left: 15px;
+    animation: showup 2s;
+    border-radius: 20px;
+}
+
+@keyframes showup {
+    from {height: 0;}
+    to {height: 400px;}
+}
+
+.about-img .aboutme1:hover {
+    height: 450px;
+    transition: all 0.5s;
+}
+
+.about-img .aboutme2:hover {
+    height: 450px;
+    transition: all 0.5s;
+}
+
+.about-img .aboutme3:hover {
+    height: 450px;
+    transition: all 0.5s;
+}
+
+.section-project {
+    background: url(images/bg.webp) no-repeat;
+    background-size: cover;
+    color: aliceblue;
+    text-align: center;
+    height: 100vh;
+    padding-top: 50px;
+}
+
+.section-contact {
+    background: url(images/bg.webp) no-repeat;
+    background-size: cover;
+    color: aliceblue;
+    height: 100vh;
+}
+
+legend h1 {
+    font-size: xx-large;
+}
+
+.form {
+    display: flex;
+}
+
+.form-a {
+    text-decoration: none;
+    color: aliceblue;
+}
+
+.form-a:hover {
+    color: aqua;
+    transition: all 0.7s;
+}
+
+.email {
+    width: auto;
+    margin-left: 100px;
+    margin-top: 10px;
+}
+
+input {
+    font-size: 14px;
+    line-height: 1.5;
+    padding: 5px 10px;
+    background: #312d2d;
+    display: block;
+    height: 50px;
+    width: 650px;
+    color: aliceblue;
+    border: #312d2d;
+    place-items: inherit;
+}
+
+.input-name {
+    max-width: 550px;
+    margin-left: 100px;
+}
+
+::placeholder {
+    color: white;
+    opacity: 1;
 }
