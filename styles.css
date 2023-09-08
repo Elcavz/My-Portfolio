@@ -8,10 +8,6 @@
     scroll-behavior: smooth;
 }
 
-body {
-    
-}
-
 .header-span {
     color: aqua;
     transition: all 0.7s ease-in 0s;
@@ -136,7 +132,14 @@ ul.nav {
     position: absolute;
     margin-left: 800px;
     margin-top: 80px;
-    transition: all 0.7s ease-in-out 0s;
+}
+
+.me img {
+    transition: all 0.7s;
+}
+
+.me img:hover {
+    transform: scale(1.2)
 }
 
 .section-about {
@@ -163,19 +166,31 @@ ul.nav {
     to {height: 400px;}
 }
 
+.about-img .aboutme1 {
+    transition: all 0.5s;
+}
+
 .about-img .aboutme1:hover {
     height: 450px;
+    transform: scale(1.2);
+}
+
+.about-img .aboutme2 {
     transition: all 0.5s;
 }
 
 .about-img .aboutme2:hover {
     height: 450px;
+    transform: scale(1.2);
+}
+
+.about-img .aboutme3 {
     transition: all 0.5s;
 }
 
 .about-img .aboutme3:hover {
     height: 450px;
-    transition: all 0.5s;
+    transform: scale(1.2);
 }
 
 .section-project {
@@ -185,58 +200,4 @@ ul.nav {
     text-align: center;
     height: 100vh;
     padding-top: 50px;
-}
-
-.section-contact {
-    background: url(images/bg.webp) no-repeat;
-    background-size: cover;
-    color: aliceblue;
-    height: 100vh;
-}
-
-legend h1 {
-    font-size: xx-large;
-}
-
-.form {
-    display: flex;
-}
-
-.form-a {
-    text-decoration: none;
-    color: aliceblue;
-}
-
-.form-a:hover {
-    color: aqua;
-    transition: all 0.7s;
-}
-
-.email {
-    width: auto;
-    margin-left: 100px;
-    margin-top: 10px;
-}
-
-input {
-    font-size: 14px;
-    line-height: 1.5;
-    padding: 5px 10px;
-    background: #312d2d;
-    display: block;
-    height: 50px;
-    width: 650px;
-    color: aliceblue;
-    border: #312d2d;
-    place-items: inherit;
-}
-
-.input-name {
-    max-width: 550px;
-    margin-left: 100px;
-}
-
-::placeholder {
-    color: white;
-    opacity: 1;
 }
