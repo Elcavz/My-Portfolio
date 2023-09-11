@@ -8,58 +8,91 @@
     scroll-behavior: smooth;
 }
 
-
-.header-span {
-    color: aqua;
-    transition: all 0.7s ease-in 0s;
+button {
+    cursor: pointer;
 }
 
-nav {
+button:hover {
+    box-shadow: 0px 0px 15px black;
+}
+
+.div-pf {
     display: flex;
-    justify-content: right;
 }
 
-ul.nav {
-    list-style: none;
-    text-align: center;
-    margin-top: -25px;
-    margin-right: 150px;
-}
-
-.header-p {
-    margin-top: 30px;
-    margin-left: 180px;
-    font-size: x-large;
-    transition: all 0.7s ease-in 0s;
-    color: white;
-}
-
-
-.header-div:hover {
-    .header-p{color: aqua;}
-    .header-span{color: white;}
-}
-
-.nav li a {   
-    color: white;
+.pf-h1 a {
     text-decoration: none;
 }
 
-.nav li a:hover {
-    color: aqua;
-    transition: all 0.3s ease-in 0s;
+.h1-s {
+    color: aliceblue;
 }
 
-.nav li {
-    display: inline-block;
-    padding: 0 20px;
-    margin-right: 30px;
-    transition: all 0.7s ease-in 0s;
+.span-h1 {
+    color: #00fbfb;
 }
 
-.nav a.active:hover,
-.nav a.active {
-    color: aqua;
+.div-pf ul {
+    display: flex;
+}
+
+.div-pf {
+    position: fixed;
+    height: 70px; 
+    width: 100%; 
+    background: url(images/bg.webp);
+    background-size: cover;
+    margin-top: 40px;
+    box-shadow: 0 10px 20px black;
+}
+
+.pf-h1 {
+    width: 50%;
+    margin-left: 167px;
+    margin-top: 30px;
+}
+
+.pf-ul {
+    width: 50%;
+    margin-left: 50px;
+    margin-top: 36px;
+}
+
+.ul-nav li {
+    list-style: none;
+    margin-left: 70px;
+}
+
+.ul-nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: 590;
+    transition: all 0.5s;
+}
+
+.a-about:hover {
+    color: #00fbfb;
+    transform: translateY(1.5px);
+}
+
+
+.a-project:hover {
+    color: #00fbfb;
+    transform: translate(1.5);
+}
+
+.a-contact:hover {
+    color: #00fbfb;
+    transform: translate(1.5);
+}
+
+.a-home:hover {
+    color: #00fbfb;
+    transform: translate(1.5);
+}
+
+.pf-ul .ul-nav a.active {
+    color: #00fbfb;
 }
 
 .section-home {
@@ -68,7 +101,7 @@ ul.nav {
     color: white;
     display: flex;
     align-items: center;
-    height: 100vh;
+    height: 113vh;
     padding: 0 10%;
     margin-top: -60px;
 }
@@ -77,8 +110,6 @@ ul.nav {
     max-width: 600px;
     transition: all 0.7s ease-in 0s;
 }
-
-
 
 .content h1 {
     font-family: Cutive Mono ;
@@ -127,12 +158,9 @@ ul.nav {
     0% { opacity: 0; }
     100% { opacity: 1; }
 }
-  
-  
 
 .me {
-    position: absolute;
-    margin-left: 800px;
+    margin-left: 195px;
     margin-top: 80px;
 }
 
@@ -156,6 +184,7 @@ ul.nav {
     color: aliceblue;
 }
 
+
 .about-img img  {
     height: 400px;
     margin-left: 15px;
@@ -175,6 +204,7 @@ ul.nav {
 .about-img .aboutme1:hover {
     height: 450px;
     transform: scale(1.2);
+    box-shadow: 10px 10px 20px black;
 }
 
 .about-img .aboutme2 {
@@ -184,6 +214,7 @@ ul.nav {
 .about-img .aboutme2:hover {
     height: 450px;
     transform: scale(1.2);
+    box-shadow: 10px 10px 20px black;
 }
 
 .about-img .aboutme3 {
@@ -193,6 +224,7 @@ ul.nav {
 .about-img .aboutme3:hover {
     height: 450px;
     transform: scale(1.2);
+    box-shadow: 10px 10px 20px black; 
 }
 
 .section-project {
@@ -204,6 +236,43 @@ ul.nav {
     padding-top: 50px;
 }
 
+.div-project {
+    margin-top: 40px;
+}
+
+.myproject {
+    margin-top: 85px;
+}
+
+.myproject img {
+    height: 300px;
+    width: 500px;
+    border-radius: 10px;
+}
+
+.myproject img:hover {
+    
+}
+
+.button-project button {
+    height: 45px;
+    width: 110px;
+    background-color: green;
+    border: none;
+    color: white;
+    border-radius: 5px;
+    transition: all 0.5s;
+}
+
+.button-project button:hover {
+    transform: scale(1.2);
+}
+
+.button-project {
+    margin-top: 150px;
+}
+
+
 #contact {
     height: 100vh;
     background: url(images/bg.webp) no-repeat;
@@ -214,7 +283,7 @@ ul.nav {
 .container-contact {
     position: relative;
     border: 1px solid white;
-    top: 11%;
+    top: 15%;
     height: 75%;
     width: 50%;
     left: 25%;
@@ -387,4 +456,22 @@ textarea {
 
 .button-submit:hover {
     transform: scale(1.2);
+}
+
+.div-ft {
+    height: 50px;
+    background-color: #24252A;
+    box-shadow: 0 -5px 15px black
+}
+
+.h-ft {
+    height: 40px;
+    display: inline-block;
+    margin-left: 40%;
+}
+
+.h-ft h1 {
+    font-size: large;
+    color: aliceblue;
+    margin-top: 15px;
 }

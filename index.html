@@ -5,25 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="images/title-icon.png">
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+        const navLinks = document.querySelectorAll("a");
+        navLinks.forEach(link => {
+            link.addEventListener("click", function(e) {          
+                navLinks.forEach(link => {
+                    link.classList.remove("active");
+                });    
+                this.classList.add("active");
+                });
+            });
+        });
+    </script>
 </head>
 <body>
-    <div class="header-div">
-        <p class="header-p">My Port<span class="header-span">folio</span></p>
-    </div>  
     <header>
-        <div class="nav">
-            <nav>               
-                <ul class="nav">
-                    <li><a href="#" class="active">Home</a></li>
-                    <li><a href="#about">About</a></li>
-                    <li><a href="#project">Project</a></li>
-                    <li><a href="#contact">Contact</a></li>
-                </ul>
-            </nav>
-        </div>
+       <nav class="navigation">
+            <div class="div-pf">
+                <div class="pf-h1">
+                    <a href="#home"><h1><span class="h1-s">My Port</span><span class="span-h1">folio</span></h1></a>
+                </div>
+                <div class="pf-ul">
+                    <ul class="ul-nav">
+                        <li><a class="a-home" href="#home">Home</a></li>
+                        <li><a class="a-about" href="#about">About</a></li>
+                        <li><a class="a-project" href="#project">Project</a></li>
+                        <li><a class="a-contact" href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+       </nav>
     </header>
     
-    <section class="section-home">
+    <section id="home" class="section-home">
         <div class="content">
             <h1>Hi, I'm Renz Sayaman</h1>
             <h3>Front-End Web Developer</h3>
@@ -49,13 +65,22 @@
         </div>
     </section>
     <section id="project" class="section-project">
-        <div>
+        <div class="div-project">
             <h1>My Projects</h1>
+            <div class="myproject">
+                <img src="images/project.PNG" alt="">
+                <div class="div-project-img">
+                    <p>My Portfolio</p>
+                </div>
+            </div>
+            <div class="button-project">
+                <button>See More</button>
+            </div>
         </div>
     </section>
     <section id="contact" class="section-contact">
         <div class="container-contact">
-            <div class="contactme">
+            <div class="contactme"> 
                 <h1>Contact Me</h1>
             </div>
             <div class="social">
@@ -95,5 +120,12 @@
             </div>
         </div>
     </section>
+    <footer class="ft-container">
+        <div class="div-ft">
+            <div class="h-ft">
+                <h1>Copyright 2023 - Portfolio - Renz Sayaman</h1>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
