@@ -107,7 +107,7 @@ button:hover {
 }
 
 .content {
-    max-width: 600px;
+    width: 50%;
     transition: all 0.7s ease-in 0s;
 }
 
@@ -160,7 +160,8 @@ button:hover {
 }
 
 .me {
-    margin-left: 195px;
+    width: 50%;
+    margin-left: 244px;
     margin-top: 80px;
 }
 
@@ -250,9 +251,6 @@ button:hover {
     border-radius: 10px;
 }
 
-.myproject img:hover {
-    
-}
 
 .button-project button {
     height: 45px;
@@ -475,3 +473,113 @@ textarea {
     color: aliceblue;
     margin-top: 15px;
 }
+
+@media only screen and (max-width: 280px)
+{
+    html,
+    body {
+        width: 100vw
+    }
+
+
+    .pf-h1 {
+        margin-left: 28px;
+        width: auto;
+    }
+
+    .pf-h1 a {
+        width: 145%;
+    }
+
+    .div-pf ul {
+        width: 0;
+    }
+
+    .pf-ul {
+        margin: 0;
+        width: 10%;
+        float: right;
+    }
+
+    .div-pf {
+        display: inline-block;
+    }
+
+    .section-home {
+        padding: 0;
+    }
+
+    .content {
+        display: block;
+        width: 57%;
+        min-width: 99%;
+        margin: 10px;
+        height: 0;
+        margin-top: 100px;
+    }
+
+    .content h1 {
+        font-size: larger;
+    }
+
+    .content h3 {
+        font-size: large;
+    }
+
+    .content p {
+        font-size: smaller;
+    }
+
+    .content .btn {
+        height: 32px;
+        padding-top: 5px;
+    }
+
+    .content .btn a {
+        padding: 0;
+    }
+
+    .section-home .me {
+        position: absolute;
+        margin-bottom: 258px;
+        margin-left: 0;
+    }
+
+    .section-home .me img {
+        height: 203px;
+    }
+
+    .section-about {
+        padding: 0 5px 5px;
+        height: 760px;
+    }
+
+    .container-about p {
+        font-size: small;
+    }
+
+    .about-img img {
+        height: 200px;
+        margin: 0 0 10px 0;
+        border-radius: 10px;
+    }
+
+    .about-img img:hover {
+        transform: scale(0.1);
+    }
+
+    .myproject img {
+        height: 207px;
+        width: 240px;
+    }
+
+    .button-project {
+        margin-top: 50px;
+    }
+
+    .container-contact {
+        width: 100%;
+        top: 15%;
+        left: 0;
+    }
+} 
