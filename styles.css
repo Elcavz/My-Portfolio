@@ -577,9 +577,40 @@ textarea {
         margin-top: 50px;
     }
 
+    .section-contact {
+        height: 500px;
+    }
+
     .container-contact {
+        position: inherit;
         width: 100%;
         top: 15%;
         left: 0;
+        border: none;
+    }
+
+    .social {
+        display: none;
+    }
+
+    .contactme {
+        padding: 0;
+    }
+
+    .textbox {
+        position: absolute;
+    }
+
+    .submit {
+        width: 277px;
+        text-align: center;
+    }
+
+    .h-ft {
+        margin: 0;
+    }
+
+    .h-ft h1 {
+        font-size: 12px;
     }
 } 
