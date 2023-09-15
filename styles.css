@@ -54,7 +54,7 @@ button:hover {
 
 .pf-ul {
     width: 50%;
-    margin-left: 50px;
+    margin-left: 10px;
     margin-top: 36px;
 }
 
@@ -113,14 +113,14 @@ button:hover {
 
 .content h1 {
     font-family: Cutive Mono ;
-    font-size: 45px;
+    font-size: 29px;
     font-weight: 600;
     text-align: left;
     transition: all 0.7s ease-in 0s;
 }
 
 .content h3 {
-    font-size: 32px;
+    font-size: 25px;
     font-weight: 550;
     color: aqua;
 }
@@ -149,7 +149,7 @@ button:hover {
 }
 
 .me img {
-    height: 500px;
+    height: 400px;
     margin-left: 70px;
     animation: fadeIn 3s;
 }
@@ -178,7 +178,7 @@ button:hover {
     background-size: cover;
     height: 100vh;
     text-align: center;
-    padding-top: 150px;
+    padding-top: 72px;
 }
 
 .container-about {
@@ -187,7 +187,7 @@ button:hover {
 
 
 .about-img img  {
-    height: 400px;
+    height: 340px;
     margin-left: 15px;
     animation: showup 2s;
     border-radius: 20px;
@@ -203,7 +203,7 @@ button:hover {
 }
 
 .about-img .aboutme1:hover {
-    height: 450px;
+    height: 340px;
     transform: scale(1.2);
     box-shadow: 10px 10px 20px black;
 }
@@ -213,7 +213,7 @@ button:hover {
 }
 
 .about-img .aboutme2:hover {
-    height: 450px;
+    height: 340px;
     transform: scale(1.2);
     box-shadow: 10px 10px 20px black;
 }
@@ -223,7 +223,7 @@ button:hover {
 }
 
 .about-img .aboutme3:hover {
-    height: 450px;
+    height: 340px;
     transform: scale(1.2);
     box-shadow: 10px 10px 20px black; 
 }
@@ -267,7 +267,7 @@ button:hover {
 }
 
 .button-project {
-    margin-top: 150px;
+    margin-top: 62px;
 }
 
 
@@ -281,8 +281,8 @@ button:hover {
 .container-contact {
     position: relative;
     border: 1px solid white;
-    top: 15%;
-    height: 75%;
+    top: 13%;
+    height: 80%;
     width: 50%;
     left: 25%;
 }
@@ -290,8 +290,8 @@ button:hover {
 div .contactme {
     color: aliceblue;
     text-align: center;
-    margin-bottom: 70px;
-    padding-top: 25px;
+    margin-bottom: 38px;
+    padding-top: 10px;
 }
 
 .email {
@@ -302,7 +302,7 @@ div .contactme {
 }
 
 .email .img-icon {
-    margin-left: 135px;
+    margin-left: 79px;
     margin-top: 9.5px;
 }
 
@@ -347,7 +347,7 @@ div .contactme {
 }
 
 .viber .viber-icon {
-    margin-left: 132px; 
+    margin-left: 79px; 
     margin-top: 3 px;
 }
 
@@ -359,7 +359,7 @@ div .contactme {
     width: 95%;
     height: 50px;
     margin-top: 50px;
-    margin-left: 149px;
+    margin-left: 89px;
 }
 
 .media ul {
@@ -387,7 +387,7 @@ ul .wa:hover {
 
 .button-resume {
     width: 150px;
-    margin-left: 39%;
+    margin-left: 30%;
     margin-top: 45px;
     padding: 15px;
     background-color: green;
@@ -412,7 +412,7 @@ ul .wa:hover {
     color: aliceblue;
     border: #312d2d;
     place-items: inherit;
-    width: 334px;
+    width: 320px;
 }
 
 textarea {
@@ -425,6 +425,7 @@ textarea {
     border: #312d2d;
     place-items: inherit;
     resize: none;
+    width: 320px;
 }
 
 .social {
@@ -558,6 +559,10 @@ textarea {
         font-size: small;
     }
 
+    .about-img {
+        margin-top: 24px;
+    }
+
     .about-img img {
         height: 200px;
         margin: 0 0 10px 0;
@@ -571,10 +576,6 @@ textarea {
     .myproject img {
         height: 207px;
         width: 240px;
-    }
-
-    .button-project {
-        margin-top: 50px;
     }
 
     .section-contact {
