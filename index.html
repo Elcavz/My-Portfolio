@@ -17,6 +17,18 @@
                 this.classList.add("active");
                 });
             });
+
+        // Mobile menu toggle
+        const nav = document.querySelector(".navigation");
+        const toggle = document.querySelector(".nav-toggle");
+        const setOpen = open => {
+            nav.classList.toggle("open", open);
+            toggle.setAttribute("aria-expanded", open);
+        };
+        toggle.addEventListener("click", () => setOpen(!nav.classList.contains("open")));
+        document.querySelectorAll(".ul-nav a, .pf-h1 a").forEach(link => {
+            link.addEventListener("click", () => setOpen(false));
+        });
         });
     </script>
 </head>
@@ -27,6 +39,9 @@
                 <div class="pf-h1">
                     <a href="#home"><h1><span class="h1-s">My Port</span><span class="span-h1">folio</span></h1></a>
                 </div>
+                <button class="nav-toggle" type="button" aria-label="Toggle navigation" aria-expanded="false">
+                    <span></span><span></span><span></span>
+                </button>
                 <div class="pf-ul">
                     <ul class="ul-nav">
                         <li><a class="a-home" href="#home">Home</a></li>
@@ -57,7 +72,7 @@
         <div class="container-about">
             <h1>ABOUT ME</h1>
             <p>An ICT Graduate, aspiring to be one of professional developer here in Philippines.</p>
-        </div><br><br>
+        </div>
         <div class="about-img">
             <img class="aboutme1" src="images/aboutme1.jpg" alt="">
             <img class="aboutme2" src="images/aboutme2.jpg" alt="">
@@ -110,8 +125,8 @@
             </div>
             <div class="textbox">
                 <div class="textname">
-                    <input class="inputbox" type="text" placeholder="Your Name"><br>
-                    <input class="inputbox" type="text" placeholder="Your Email"><br>
+                    <input class="inputbox" type="text" placeholder="Your Name">
+                    <input class="inputbox" type="text" placeholder="Your Email">
                     <textarea name="" id="" cols="30" rows="10" placeholder="Your Message"></textarea>
                 </div>
                 <div class="submit">
